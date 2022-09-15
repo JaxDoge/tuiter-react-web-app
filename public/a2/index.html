@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body data-new-gr-c-s-check-loaded="14.1079.0" data-gr-ext-installed="">
 
@@ -31,19 +36,40 @@ How to join the 1%
 <ol>
     <li>Get a masters in computer science</li>
     <li>Get a $100K+ starting salary job</li>
-    <li>Marry a like-minded engineer</li>
-    <li>Do great work for a decade</li>
+    <li>Marry a 1% person</li>
+    <li>Enjoy the rest of your life!</li>
 </ol>
 
 <h3>Unordered List Tag</h3>
 My favorite books (in no particular order)
 <ul>
-    <li>Dune</li>
-    <li>Lord of the Rings</li>
-    <li>Ender's Game</li>
-    <li>Red Mars</li>
-    <li>The Forever War</li>
+    <li>Secondhand Time - The Last of the Soviets</li>
+    <li>Nineteen Eighty-four</li>
+    <li>Animal Farm</li>
+    <li>Snow Falling on Cedars</li>
+    <li>Brave New World</li>
 </ul>
+
+<h1>The table element</h1>
+
+<table>
+    <tr>
+        <th>Month</th>
+        <th>Interview</th>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>Amazon</td>
+    </tr>
+    <tr>
+        <td>February</td>
+        <td>Google</td>
+    </tr>
+    <tr>
+        <td>March</td>
+        <td>Microsoft</td>
+    </tr>
+</table>
 
 
 <h2>Image tag</h2>
@@ -53,7 +79,8 @@ Loading an image from the internet:<br>
 <img width="400px"
      src="https://www.transformationmarketing.com/wp-content/uploads/2018/03/giphy-downsized.gif" alt="Sloth">
 <img width="200px" height="200px"
-     src="https://www.transformationmarketing.com/wp-content/uploads/2018/03/White-Guy-Blinking.gif" alt="White Guy Blink">
+     src="https://www.transformationmarketing.com/wp-content/uploads/2018/03/White-Guy-Blinking.gif"
+     alt="White Guy Blink">
 <br>
 
 Loading a local image:<br>
@@ -67,30 +94,127 @@ Loading a local image:<br>
 <h2>Text fields</h2>
 <form id="text-fields">
     <label for="text-fields-username">Username:</label>
-    <input id="text-fields-username" placeholder="Username"><br>
+    <input type="text" id="text-fields-username" placeholder="Username"><br>
     <label for="text-fields-password">Password:</label>
-    <input type="password" id="text-fields-password" value="123"><br>
+    <input type="password" id="text-fields-password" placeholder="******"><br>
     <label for="text-fields-first-name">First name:</label>
-    <input type="text" id="text-fields-first-name" title="John"><br>
+    <input type="text" id="text-fields-first-name" placeholder="John"><br>
     <label for="text-fields-last-name">Last name:</label>
-    <input type="text" id="text-fields-last-name" placeholder="Doe" value="Wonderland">
-    <!-- copy rest of form elements here -->
+    <input type="text" id="text-fields-last-name" placeholder="Doe">
+</form>
 
-    <h2>Radio buttons</h2>
+<h2>Other field types</h2>
+<label for="text-fields-email">
+    Email:
+    <input type="email"
+           placeholder="jdoe@somewhere.com"
+           id="text-fields-email"/><br/>
+</label>
+<label for="text-fields-salary-start">
+    Starting salary:
+    <input type="number"
+           id="text-fields-salary-start"
+           placeholder="3000"/><br/>
+</label>
+<label for="text-fields-rating">
+    Rating:
+    <input type="range" id="text-fields-rating"
+           max="5"
+           value="3"/><br/>
+</label>
+<label for="text-fields-dob">
+    Date of birth:
+    <input type="date"
+           id="text-fields-dob"
+           value="1970-01-01"/><br/>
+</label>
 
-    <label>Favorite movie genre:</label><br>
+<h2>Text boxes</h2>
+<form id="textarea">
+    <label>The Lyrics:</label><br/>
+    <textarea cols="30" rows="10">Do you hear the people sing?
+Singing a song of angry men?
+It is the music of a people
+Who will not be slaves again!
+When the beating of your heart
+Echoes the beating of the drums
+There is a life about to start
+When tomorrow comes!</textarea>
+</form>
+
+<h3>Buttons</h3>
+<button>Click me!</button>
+
+
+<h2>Dropdowns</h2>
+
+<h3>Select one</h3>
+<label for="select-one-genre">
+    Favorite movie genre:
+</label><br/>
+<select id="select-one-genre">
+    <option value="COMEDY">Comedy</option>
+    <option value="DRAMA">Drama</option>
+    <option value="SCIFI">Science Fiction</option>
+    <option value="FANTASY">Fantasy</option>
+</select>
+
+<h3>Select many</h3>
+<label for="select-many-genre">
+    Favorite movie genres:
+</label><br/>
+<select id="select-many-genre" multiple>
+    <option selected value="COMEDY">Comedy</option>
+    <option value="DRAMA">Drama</option>
+    <option selected value="SCIFI">
+        Science Fiction
+    </option>
+    <option value="FANTASY">Fantasy</option>
+</select>
+
+
+<h2>File upload</h2>
+<input type="file"/>
+
+<h2>Radio buttons</h2>
+
+<label>Favorite movie genre:<br>
 
     <input type="radio" value="COMEDY" name="radio-genre" id="radio-comedy">
     <label for="radio-comedy">Comedy</label><br>
     <input type="radio" value="DRAMA" name="radio-genre" id="radio-drama">
     <label for="radio-drama">Drama</label><br>
-    <input type="radio" value="SCIFI" name="radio-genre" id="radio-scifi" checked="">
+    <input type="radio" value="SCIFI" name="radio-genre" id="radio-scifi">
     <label for="radio-scifi">Science Fiction</label><br>
     <input type="radio" value="FANTASY" name="radio-genre" id="radio-fantasy">
     <label for="radio-fantasy">Fantasy</label>
+</label><br>
 
-</form>
 
+<h2>Checkboxes</h2>
+<label>Favorite movie genre:</label>
+<br/>
+<input type="checkbox" value="COMEDY"
+       name="check-genre" id="chkbox-comedy"/>
+<label for="chkbox-comedy">Comedy</label> <br/>
+<input type="checkbox" value="DRAMA"
+       name="check-genre" id="chkbox-drama"/>
+<label for="chkbox-drama">Drama</label> <br/>
+<input type="checkbox" value="SCIFI"
+       name="check-genre" id="chkbox-scifi"/>
+<label for="chkbox-scifi">Science Fiction</label> <br/>
+<input type="checkbox" value="FANTASY"
+       name="check-genre" id="chkbox-fantasy"/>
+<label for="chkbox-fantasy">Fantasy</label>
+
+
+<h2>Anchor tag</h2>
+
+Please
+<a href="https://www.lipsum.com">click here</a>
+to get dummy text<br/>
+
+Checkout Youtube <a href="https://www.youtube.com">Here</a>
 
 </body>
 </html>
