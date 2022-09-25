@@ -21,7 +21,7 @@
 }
 
 .wd-content-width {
-    width: 36%;
+    width: 42%;
 }
 
 .wd-100p-width {
@@ -40,8 +40,8 @@
     color: rgb(239, 243, 244);
 }
 
-.wd-search-placeholder-font {
-    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+.wd-search-navilab-font {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .wd-search-text-input-padding {
-    padding-top: 14px;
+    padding-top: 11px;
 }
 
 .wd-content-container-padding {
@@ -91,6 +91,14 @@
     float: left;
 }
 
+.wd-float-left-start {
+    float: left;
+}
+
+.wd-float-right-start {
+    float: right;
+}
+
 .wd-12px-margin-left {
     margin-left: 12px;
 }
@@ -109,7 +117,7 @@
 
 .wd-search-icon-position {
     position: relative;
-    bottom: 4px;
+    bottom: 1px;
     left: 40%;
 }
 
@@ -125,3 +133,84 @@
     padding-top: 3px;
     padding-left: 20px;
 }
+
+.wd-font-weight-bold {
+    font-weight: bold;
+}
+
+.wd-font-highlight-blue {
+    color: #1d9aef;
+}
+
+.selected-lab {
+    border-bottom: solid 3px;
+}
+
+.wd-search-navilab-font div {
+    /*list-style-type: none;*/
+    display: inline-block;
+    padding: 16px;
+}
+
+.wd-zero-padding {
+    padding: 0px;
+}
+
+.wd-solid-base-border {
+    border: solid rgb(47, 51, 54) 1px;
+}
+
+
+.wd-content-list {
+    border-top: solid rgb(47, 51, 54) 1px;
+}
+
+#content-list .wd-content-title {
+    color: rgb(239, 243, 244);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+
+#content-list .wd-content-subtitle {
+    color: rgb(110, 118, 125);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.wd-content-block {
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.wd-content-inner-block {
+    margin: 16px;
+}
+
+.wd-content-block .wd-media-title {
+    color: rgb(239, 243, 244);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.wd-content-block .wd-type-D-content {
+    width: 75%;
+}
+
+.wd-content-block .wd-type-E-content {
+    width: 75%;
+}
+
+.wd-img-component .wd-title-img {
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.wd-title-img img {
+    border-radius: 15px;
+}
+

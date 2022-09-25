@@ -5,15 +5,15 @@
     <title>Title</title>
     <link href="index.css" rel="stylesheet">
 </head>
-<body>
+<body class="wd-main-background">
 
-<div class="wd-main-width wd-one-z-index wd-border-right-1px wd-border-left-1px wd-content-width wd-main-background
+<div class="wd-one-z-index wd-border-right-1px wd-border-left-1px wd-content-width wd-solid-base-border
     wd-position-relative"
      id="main timeline">
-    <div id="content-container" class="wd-12px-margin-left wd-12px-margin-right wd-content-container-padding">
-        <div id="navibar" class="">
+    <div id="content-container" class="">
+        <div id="navibar" class="wd-12px-margin-left wd-12px-margin-right wd-content-container-padding">
             <div id="uppernavibar" class="">
-                <div id="search-input" class="wd-foreground-light-grey wd-search-placeholder-font
+                <div id="search-input" class="wd-foreground-light-grey
             wd-background-black-grey wd-rounded-corners-all-around wd-grid-col-90p-page">
                     <div id="textbar" class="">
                         <div id="search-icon" class="wd-search-icon-font wd-grid-col-10p-page wd-position-relative">
@@ -26,7 +26,7 @@
                         <div class="wd-float-done"></div>
                     </div>
                 </div>
-                <div id="cog" class="wd-foreground-light">
+                <div id="cog" class="wd-foreground-light wd-font-highlight-blue">
                     <span class="wd-grid-col-10p-page-right wd-gear-position">
                         &#x26ED
                     </span>
@@ -37,17 +37,98 @@
 
             </div>
 
-            <div id="lowernavi" class="wd-foreground-light-grey">
-                <ul>
-                    <li>For You</li>
-                    <li>Trending</li>
-                    <li>COVID-19</li>
-                    <li>News</li>
-                    <li>Sports</li>
-                    <li>Entertainment</li>
-                </ul>
+            <div id="lowernavi" class="wd-foreground-light-grey wd-search-navilab-font wd-font-weight-bold ">
+                <div class="selected-lab wd-font-highlight-blue">
+                    For You
+                </div>
+                <div>Trending</div>
+                <div>COVID-19</div>
+                <div>News</div>
+                <div>Sports</div>
+                <div>Entertainment</div>
 
             </div>
+        </div>
+<!--        <div id="timeline-division-line" class="wd-solid-base-border"></div>-->
+        <div id="content-list" class="wd-content-list">
+            <div class="wd-content-block ">
+                <div class="wd-type-C-content wd-content-inner-block">
+                    <div class="wd-content-subtitle">
+                        Trending in Game
+                    </div>
+                    <div class="wd-content-title">CDPR</div>
+                    <div class="wd-content-subtitle">2,136 Tweets</div>
+                </div>
+            </div>
+
+            <div class="wd-content-block">
+                <div class="wd-type-C-content wd-content-inner-block">
+                    <div class="wd-content-subtitle">Trending</div>
+                    <div class="wd-content-title">#RussianMobilization</div>
+                    <div class="wd-content-subtitle">1,930 Tweets</div>
+                </div>
+            </div>
+
+            <div class="wd-content-block">
+                <div class="wd-type-D-content wd-content-inner-block wd-float-left-start">
+                    <div class="wd-content-subtitle">
+                        <span class="wd-media-title">Los Angeles Times &#x2611</span> &#x00B7 September 23, 2022
+                    </div>
+                    <div class="wd-content-title ">With interest rates surging, what does a starter home look like in Southern California?</div>
+                </div>
+                <div class="wd-img-component wd-float-right-start">
+                    <div class="wd-title-img">
+                        <img src="imgs/house1.jpg" width="100px" height="100px" class="">
+                    </div>
+                </div>
+                <div class="wd-float-done"></div>
+            </div>
+
+            <div class="wd-content-block">
+                <div class="wd-type-D-content wd-content-inner-block wd-float-left-start">
+                    <div class="wd-content-subtitle">
+                        <span class="wd-media-title">AccuWeather &#x2611</span> &#x00B7 1 hour ago
+                    </div>
+                    <div class="wd-content-title ">Tropical Storm Ian strengthening, expected to hit Florida as a hurricane</div>
+                </div>
+                <div class="wd-img-component wd-float-right-start">
+                    <div class="wd-title-img">
+                        <img src="imgs/weather.jpg" width="100px" height="100px" class="">
+                    </div>
+                </div>
+                <div class="wd-float-done"></div>
+            </div>
+
+            <div class="wd-content-block">
+                <div class="wd-type-E-content wd-content-inner-block wd-float-left-start">
+                    <div class="wd-content-subtitle">
+                        War in Ukraine &#x00B7 LIVE
+                    </div>
+                    <div class="wd-content-title ">Latest updates on the war in Ukraine</div>
+                </div>
+                <div class="wd-img-component wd-float-right-start">
+                    <div class="wd-title-img">
+                        <img src="imgs/warinukraine.jpg" width="100px" height="100px" class="">
+                    </div>
+                </div>
+                <div class="wd-float-done"></div>
+            </div>
+
+            <div class="wd-content-block">
+                <div class="wd-type-E-content wd-content-inner-block wd-float-left-start">
+                    <div class="wd-content-subtitle">
+                        US elections &#x00B7 LIVE
+                    </div>
+                    <div class="wd-content-title ">California: Election news and updates</div>
+                </div>
+                <div class="wd-img-component wd-float-right-start">
+                    <div class="wd-title-img">
+                        <img src="imgs/elections.jpg" width="100px" height="100px" class="">
+                    </div>
+                </div>
+                <div class="wd-float-done"></div>
+            </div>
+
         </div>
     </div>
 </div>
