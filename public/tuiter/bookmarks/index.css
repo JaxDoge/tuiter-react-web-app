@@ -123,13 +123,7 @@
 
 
 .wd-zero-border-width {
-    border: none;
-    outline: none;
-
-}
-
-input, select, textarea{
-    color: rgb(239, 243, 244);
+    border-width: 0px;
 }
 
 .wd-gear-position {
