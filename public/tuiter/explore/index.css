@@ -142,15 +142,30 @@
     color: #1d9aef;
 }
 
-.selected-lab {
+.wd-add-underline-lab {
     border-bottom: solid 3px;
+    padding-bottom: 16px;
 }
 
 .wd-search-navilab-font div {
     /*list-style-type: none;*/
     display: inline-block;
-    padding: 16px;
+    /*padding: 16px;*/
 }
+
+#lowernavi .wd-selected-lab {
+    padding-top: 16px;
+    padding-left: 4px;
+    padding-right: 32px;
+}
+
+#lowernavi .wd-inactive-lab {
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+}
+
 
 .wd-zero-padding {
     padding: 0px;
