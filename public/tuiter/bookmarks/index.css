@@ -122,6 +122,10 @@
     position: relative;
 }
 
+.wd-position-relative-nudge-up {
+    bottom: 5px;
+}
+
 .wd-search-icon-position {
     position: relative;
     bottom: 1px;
