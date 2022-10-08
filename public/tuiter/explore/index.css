@@ -116,9 +116,14 @@
 }
 
 .wd-search-icon-position {
-    position: relative;
-    bottom: 1px;
-    left: 40%;
+    position: absolute;
+    top: 6px;
+    left: 30px;
+    font-size: large;
+}
+
+.wd-gear-icon {
+    color: #0d6efc;
 }
 
 
@@ -186,20 +191,20 @@ input, select, textarea{
     border-top: solid rgb(47, 51, 54) 1px;
 }
 
-#content-list .wd-content-title {
-    color: rgb(239, 243, 244);
+.wd-content-title {
+    color: rgb(33, 37, 41);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: bold;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 
-#content-list .wd-content-subtitle {
+.wd-content-subtitle {
     color: rgb(110, 118, 125);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .wd-content-block {
@@ -210,10 +215,10 @@ input, select, textarea{
     margin: 16px;
 }
 
-.wd-content-block .wd-media-title {
-    color: rgb(239, 243, 244);
+.wd-media-title {
+    color: rgb(33, 37, 41);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -224,6 +229,8 @@ input, select, textarea{
 .wd-content-block .wd-type-E-content {
     width: 75%;
 }
+
+.wd-width
 
 .wd-img-component .wd-title-img {
     padding-right: 16px;
