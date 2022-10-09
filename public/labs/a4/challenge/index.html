@@ -6,7 +6,7 @@
     <!--    import bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<!--    <link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>-->
     <!--    Customized CSS-->
     <link href="index.css" rel="stylesheet"/>
 
@@ -14,12 +14,12 @@
     <script src="https://kit.fontawesome.com/d4bf5eb249.js" crossorigin="anonymous"></script>
 
 </head>
-<body class="">
+<body class="wd-background-black-grey">
 
-<div class="container pt-3">
+<div class="container pt-1">
     <div class="row">
         <!--Left Navigation Bar-->
-        <div id="wd-navsidebar" class="col-xxl-2 col-xl-2 col-lg-1 col-md-1 col-sm-1 col-1">
+        <div id="wd-sidenavbar" class="col-xxl-2 col-xl-2 col-lg-1 col-md-1 col-sm-1 col-1">
             <div class="list-group">
                 <div href="#" class="list-group-item">
                     <i class="fa-solid fa-t"></i>
@@ -27,7 +27,7 @@
                 <a href="#" class="list-group-item list-group-item-action ">
                     <i class="fa-solid fa-house"></i><span class="d-none d-xl-inline ms-2">Home</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action active">
+                <a href="#" class="list-group-item list-group-item-action active wd-font-weight-bold">
                     <i class="fa-solid fa-hashtag"></i><span class="d-none d-xl-inline ms-2">Explore</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
@@ -51,15 +51,14 @@
             </div>
             <div id="post-tuiter">
                 <div id="post-button" class="d-grid pt-2 pb-2">
-                    <button class="btn btn-primary rounded-pill" type="button">Tuit</button>
+                    <button class="btn btn-primary btn-lg rounded-pill" type="button">Tuit</button>
                 </div>
 
             </div>
         </div>
 
         <!--Main content column-->
-        <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-11 col-sm-11 col-11"
-             id="main timeline">
+        <div id="main timeline" class="col-xxl-6 col-xl-6 col-lg-7 col-md-11 col-sm-11 col-11">
             <div id="content-container" class="">
                 <div id="navibar" class="wd-content-container-padding">
                     <div id="uppernavibar" class="row position-relative">
@@ -81,29 +80,31 @@
 
                     <div id="lowernavi">
 
-                        <nav class="nav nav-tabs pt-2">
-                                <a class="nav-link active" href="for-you.html">
+                        <nav class="nav nav-pills nav-fill pt-4">
+                            <a class="nav-link active" href="for-you.html">
+                                <span class="w-100">
                                     For you
-                                </a>
-                                <a class="nav-link" href="trending.html">
-                                    Trending
-                                </a>
-                                <a class="nav-link" href="news.html">
-                                    News
-                                </a>
-                                <a class="nav-link" href="sports.html">
-                                    Sports
-                                </a>
-                                <a class="nav-link d-none d-md-block" href="entertainment.html">
-                                    Entertainment
-                                </a>
+                                </span>
+                            </a>
+                            <a class="nav-link" href="trending.html">
+                                Trending
+                            </a>
+                            <a class="nav-link" href="news.html">
+                                News
+                            </a>
+                            <a class="nav-link" href="sports.html">
+                                Sports
+                            </a>
+                            <a class="nav-link d-none d-md-block" href="entertainment.html">
+                                Entertainment
+                            </a>
                         </nav>
 
                     </div>
                 </div>
                 <div class="position-relative">
                     <img class="w-100 pt-2"
-                         src="imgs/Starship-Mk1-Day.webp">
+                         src="/public/tuiter/explore/imgs/Starship-Mk1-Day.webp">
                     <h3 class="position-absolute bottom-0 px-2 text-light">
                         SpaceX's Spaceship
                     </h3>
@@ -124,7 +125,7 @@
                             </div>
                             <div class="wd-img-component col-3 d-flex justify-content-end">
                                 <div class="p-1">
-                                    <img class="rounded-4" src="imgs/react-icon.webp" width="100px" height="100px">
+                                    <img class="rounded-4" src="/public/tuiter/explore/imgs/react-icon.webp" width="100px" height="100px">
                                 </div>
                             </div>
                         </div>
@@ -143,7 +144,7 @@
                             </div>
                             <div class="wd-img-component col-3 d-flex justify-content-end">
                                 <div class="p-1">
-                                    <img class="rounded-4" src="imgs/javascript-icon.png" width="100px" height="100px">
+                                    <img class="rounded-4" src="/public/tuiter/explore/imgs/javascript-icon.png" width="100px" height="100px">
                                 </div>
                             </div>
                         </div>
@@ -160,7 +161,7 @@
                             </div>
                             <div class="wd-img-component col-3 d-flex justify-content-end">
                                 <div class="p-1">
-                                    <img class="rounded-4" src="imgs/jquery.webp" width="100px" height="100px">
+                                    <img class="rounded-4" src="/public/tuiter/explore/imgs/jquery.webp" width="100px" height="100px">
                                 </div>
                             </div>
                         </div>
@@ -177,7 +178,7 @@
                             </div>
                             <div class="wd-img-component col-3 d-flex justify-content-end">
                                 <div class="p-1">
-                                    <img class="rounded-4" src="imgs/node-js.webp" width="100px" height="100px">
+                                    <img class="rounded-4" src="/public/tuiter/explore/imgs/node-js.webp" width="100px" height="100px">
                                 </div>
                             </div>
                         </div>
@@ -197,7 +198,7 @@
                 <div class="list-group-item">
                     <div class="row">
                         <div class="col-xxl-2 col-xl-2 col-lg-2">
-                            <img class="rounded-circle" height="56px" src="imgs/javaicon.png">
+                            <img class="rounded-circle" height="56px" src="/public/tuiter/explore/imgs/javaicon.png">
                         </div>
                         <div class="col-xxl-7 col-xl-6 col-lg-5 pt-1 ps-xxl-1 pe-xl-0 pe-lg-0 ps-xl-2 ps-lg-4">
                             <div class="fw-bold text-nowrap">
@@ -219,7 +220,7 @@
                 <div class="list-group-item">
                     <div class="row">
                         <div class="col-xxl-2 col-xl-2 col-lg-2">
-                            <img class="rounded-circle" height="56px" src="imgs/Relativity Space.webp">
+                            <img class="rounded-circle" height="56px" src="/public/tuiter/explore/imgs/Relativity Space.webp">
                         </div>
                         <div class="col-xxl-7 col-xl-6 col-lg-5 pt-1 ps-xxl-1 pe-xl-0 pe-lg-0 ps-xl-2 ps-lg-4">
                             <div class="fw-bold text-nowrap">
@@ -241,7 +242,7 @@
                 <div class="list-group-item">
                     <div class="row">
                         <div class="col-xxl-2 col-xl-2 col-lg-2">
-                            <img class="rounded-circle" height="56px" src="imgs/Virgin%20Galactic.png">
+                            <img class="rounded-circle" height="56px" src="/public/tuiter/explore/imgs/Virgin%20Galactic.png">
                         </div>
                         <div class="col-xxl-7 col-xl-6 col-lg-5 pt-1 ps-xxl-1 pe-xl-0 pe-lg-0 ps-xl-2 ps-lg-4">
                             <div class="fw-bold text-nowrap">
@@ -263,7 +264,7 @@
                 <div class="list-group-item">
                     <div class="row">
                         <div class="col-xxl-2 col-xl-2 col-lg-2">
-                            <img class="rounded-circle" height="56px" src="imgs/NASA_logo.png">
+                            <img class="rounded-circle" height="56px" src="/public/tuiter/explore/imgs/NASA_logo.png">
                         </div>
                         <div class="col-xxl-7 col-xl-6 col-lg-5 pt-1 ps-xxl-1 pe-xl-0 pe-lg-0 ps-xl-2 ps-lg-4">
                             <div class="fw-bold text-nowrap">
@@ -285,7 +286,7 @@
                 <div class="list-group-item">
                     <div class="row">
                         <div class="col-xxl-2 col-xl-2 col-lg-2">
-                            <img class="rounded-circle" height="56px" src="imgs/Tesla_logo.png">
+                            <img class="rounded-circle" height="56px" src="/public/tuiter/explore/imgs/Tesla_logo.png">
                         </div>
                         <div class="col-xxl-7 col-xl-6 col-lg-5 pt-1 ps-xxl-1 pe-xl-0 pe-lg-0 ps-xl-2 ps-lg-4">
                             <div class="fw-bold text-nowrap">
