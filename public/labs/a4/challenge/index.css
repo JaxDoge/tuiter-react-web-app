@@ -193,7 +193,7 @@ input, select, textarea{
 }
 
 .wd-content-title {
-    color: rgb(33, 37, 41);
+    color: rgb(247, 248, 249);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: bold;
@@ -217,7 +217,7 @@ input, select, textarea{
 }
 
 .wd-media-title {
-    color: rgb(33, 37, 41);
+    color: rgb(253, 253, 254);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: bold;
@@ -298,12 +298,43 @@ input, select, textarea{
 }
 #lowernavi .nav-link {
     color: #71767b;
+    padding-top: 13px;
+    padding-bottom: 15px;
 }
 #lowernavi .nav-link.active{
     color: #e6e8e9;
     font-weight: bold;
+    border-bottom: #0a58ca;
 }
 
 #lowernavi .nav-link:hover{
     background-color: #202327;
+}
+
+
+.line{
+    position: absolute;
+    top: 47px;
+    left: 32px;
+    width: 60px;
+    height: 1px;
+    border-top: 5px solid #1d9aef;
+    border-radius: 5%;
+}
+
+.border {
+    --bs-border-color: #2f3336;
+}
+
+
+#recommend-user .btn-primary {
+    --bs-btn-color: #0f1419;
+    --bs-btn-bg: #eef2f3;
+    --bs-btn-border-color: #eef2f3;
+    font-weight: bold;
+}
+
+#recommend-user .list-group{
+    --bs-list-group-bg: #16181c;
+    --bs-list-group-border-radius: 1.075rem;
 }
