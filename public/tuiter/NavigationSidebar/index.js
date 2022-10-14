@@ -1,7 +1,7 @@
 const NavigationSidebar = () => {
     return(`
         <!--Left Navigation Bar-->
-        <div id="wd-navsidebar" class="col-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+        <div id="wd-navsidebar" class="">
             <div class="list-group">
                 <div href="#" class="list-group-item">
                     <i class="fa-solid fa-t"></i>

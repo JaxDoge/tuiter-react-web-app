@@ -4,7 +4,7 @@ import PostSummaryList from "../PostSummaryList/index.js";
 const ExploreComponent = () => {
     return (`
                     <!--Main content column-->
-        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-10 col-10"
+        <div class=""
              id="main timeline">
             <div id="content-container" class="">
                 <div id="navibar" class="wd-content-container-padding">
