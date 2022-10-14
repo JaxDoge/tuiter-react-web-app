@@ -47,7 +47,7 @@ const PostListItem = (post) => {
             <a href="#" style = "color: red"><i class="fa-solid fa-heart me-2"></i></a>${post.likeNum}
           </div>           
           <div id="button-column" class="col-3 d-flex justify-content-center align-content-center">
-            <a href="#"><i class="fa-regular fa-share-from-square me-2"></i></a>
+            <a href="#"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
           </div>    
       </div>
    
