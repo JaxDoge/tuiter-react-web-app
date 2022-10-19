@@ -43,16 +43,16 @@ const PostListItem = ({post}) => {
 
                     <div id="functional-panel" className="row mt-3">
                         <div id="button-column" className="col-3 d-flex  align-content-center">
-                            <a href="#"><i className="fa-regular fa-message me-2"></i></a>{post.replyNum}
+                            <a href="/#"><i className="fa-regular fa-message me-2"></i></a>{post.replyNum}
                         </div>
                         <div id="button-column" className="col-3 d-flex justify-content-center align-content-center">
-                            <a href="#"><i className="fa-sharp fa-solid fa-retweet me-2"></i></a>{post.retweetNum}
+                            <a href="/#"><i className="fa-sharp fa-solid fa-retweet me-2"></i></a>{post.retweetNum}
                         </div>
                         <div id="button-column" className="col-3 d-flex justify-content-center align-content-center">
-                            <a href="#" style={{"color": "red"}}><i className="fa-solid fa-heart me-2"></i></a>{post.likeNum}
+                            <a href="/#" style={{"color": "red"}}><i className="fa-solid fa-heart me-2"></i></a>{post.likeNum}
                         </div>
                         <div id="button-column" className="col-3 d-flex justify-content-center align-content-center">
-                            <a href="#"><i className="fa-solid fa-arrow-up-from-bracket"></i></a>
+                            <a href="/#"><i className="fa-solid fa-arrow-up-from-bracket"></i></a>
                         </div>
                     </div>
 
