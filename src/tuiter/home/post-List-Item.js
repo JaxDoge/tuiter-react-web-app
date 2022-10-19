@@ -15,7 +15,7 @@ const PostListItem = ({post}) => {
                         <div id="user-time" className="col-10">
                             <span className="fw-bold">{post.userName} <i
                                 className="fa-solid fa-circle-check"></i></span>
-                            <span className="text-white-50">@{post.userHandle} &#x00B7 {post.tweetTime}</span>
+                            <span className="">@{post.userHandle} · {post.tweetTime}</span>
                         </div>
                         <div id="three-dots" className="col-2 d-flex justify-content-end">
                             <div className="text-white-50"><i className="fa-solid fa-ellipsis"></i></div>
@@ -41,7 +41,7 @@ const PostListItem = ({post}) => {
                         </div>
                     </div>
 
-                    <div id="functional-panel" className="row text-white-50 mt-3">
+                    <div id="functional-panel" className="row mt-3">
                         <div id="button-column" className="col-3 d-flex  align-content-center">
                             <a href="#"><i className="fa-regular fa-message me-2"></i></a>{post.replyNum}
                         </div>
