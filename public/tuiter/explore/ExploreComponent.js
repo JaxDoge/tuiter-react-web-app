@@ -49,7 +49,7 @@ const ExploreComponent = () => {
                 </div>
                 <div class="position-relative">
                     <img class="w-100 pt-2"
-                         src="imgs/Starship-Mk1-Day.webp">
+                         src="../../imgs/Starship-Mk1-Day.webp">
                     <h3 class="position-absolute bottom-0 px-2">
                         SpaceX's Spaceship
                     </h3>

@@ -55,38 +55,6 @@ const PostListItem = (post) => {
         </div>
       </div>
    
-<!--          <div class="wd-functional-panel">-->
-<!--            <div class="wd-button-column">-->
-<!--              <div class="wd-button-icon">-->
-<!--                <a href="#"><i class="fa-regular fa-message"></i></a>-->
-<!--              </div>-->
-<!--              <div class="wd-button-number wd-content-subtitle">-->
-<!--                9999-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="wd-button-column">-->
-<!--              <div class="wd-button-icon">-->
-<!--                <a href="#"><i class="fa-sharp fa-solid fa-retweet"></i></a>-->
-<!--              </div>-->
-<!--              <div class="wd-button-number wd-content-subtitle">-->
-<!--                9999-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="wd-button-column">-->
-<!--              <div class="wd-button-icon">-->
-<!--                <a href="#" style = "color: red"><i class="fa-solid fa-heart"></i></a>-->
-<!--              </div>-->
-<!--              <div class="wd-button-number wd-content-subtitle">-->
-<!--                9999-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="wd-button-column">-->
-<!--              <div class="wd-button-icon">-->
-<!--                <a href="#"><i class="fa-regular fa-share-from-square"></i></a>-->
-<!--              </div>-->
-<!--            </div>-->
-
-<!--          </div>-->
     </div>
 
     

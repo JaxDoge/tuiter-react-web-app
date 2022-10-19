@@ -18,7 +18,7 @@ const PostSummaryItem = (post) => {
                             </div>
                             <div class="wd-img-component col-3 d-flex justify-content-center align-content-center">
                                 <div>
-                                    <img class="rounded-4" src=${post.image} width="82px" height="82px">
+                                    <img class="rounded-4" src=${post.image} width="82px" height="82px"/>
                                 </div>
                             </div>
                         </div>
