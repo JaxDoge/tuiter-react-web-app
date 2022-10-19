@@ -13,7 +13,7 @@ const PostSummaryItem = (
     }
 ) => {
     return(
-        <a className="list-group-item list-group-item-action" key={post._id} href="#">
+        <a className="list-group-item list-group-item-action" key={post._id} href="/#">
             <div className="row ">
                 <div className="my-1 col-9">
                     <div className="">{post.topic}</div>
@@ -27,7 +27,7 @@ const PostSummaryItem = (
                     <div className="">{post.tweetNum}</div>
                 </div>
                 <div className="col-3 d-flex justify-content-center align-content-center">
-                    <img className="rounded-3" src={`/imgs/${post.image}`} width="82px" height="82px"/>
+                    <img className="rounded-3" src={`/imgs/${post.image}`} width="82px" height="82px" alt={"post summary image"}/>
                 </div>
             </div>
         </a>

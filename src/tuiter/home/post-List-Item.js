@@ -8,7 +8,7 @@ const PostListItem = ({post}) => {
 
             <div className="row">
                 <div id="avatar-colum" className="col-1">
-                    <img src={`/imgs/${post.avatarImage}`} className="rounded-circle" width="48px" />
+                    <img src={`/imgs/${post.avatarImage}`} className="rounded-circle" width="48px"  alt={"avatar image"}/>
                 </div>
                 <div id="twiter-content-column" className="col-11">
                     <div id="content-head-info" className="row">
@@ -27,7 +27,7 @@ const PostListItem = ({post}) => {
                         </div>
                         <div id="hyperlink-card" className="border rounded-3 mt-2">
                             <div className="border border-start-0 border-end-0 border-top-0">
-                                <img src={`/imgs/${post.hyperLinkImage}`} className="w-100 rounded-top" />
+                                <img src={`/imgs/${post.hyperLinkImage}`} className="w-100 rounded-top"  alt={"hyperlink card image"}/>
                             </div>
                             <div id="hyperlink-preview" className="container pt-2">
                                 <div className="">
