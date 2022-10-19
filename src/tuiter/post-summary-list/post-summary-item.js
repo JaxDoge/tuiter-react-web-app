@@ -27,7 +27,7 @@ const PostSummaryItem = (
                     <div className="">{post.tweetNum}</div>
                 </div>
                 <div className="col-3 d-flex justify-content-center align-content-center">
-                    <img className="rounded-3" src={`/imgs/${post.image}`} width="82px" height="82px" alt={"post summary image"}/>
+                    <img className="rounded-3" src={`/imgs/${post.image}`} width="82px" height="82px" alt={"post summary"}/>
                 </div>
             </div>
         </a>
