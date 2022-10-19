@@ -1,8 +1,6 @@
-import Nav from "../nav";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import ExploreComponent from "./explore";
-import PostList from "./home/post-list";
 import HomeComponent from "./home/post-list";
 
 import {Routes, Route} from "react-router-dom";
