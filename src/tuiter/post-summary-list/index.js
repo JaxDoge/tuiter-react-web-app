@@ -9,6 +9,7 @@ const PostSummaryList = () => {
             {
                 postsArray.map(post =>
                     <PostSummaryItem
+                        key={post._id}
                         post={post}/> )
             }
         </ul>

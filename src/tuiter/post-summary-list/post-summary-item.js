@@ -1,7 +1,9 @@
 import React from "react";
+
 const PostSummaryItem = (
     {
         post = {
+            "_id":123,
             "topic": "Space",
             "userName": "SpaceX",
             "time": "2h",
@@ -11,7 +13,7 @@ const PostSummaryItem = (
     }
 ) => {
     return(
-        <a className="list-group-item list-group-item-action" href="#">
+        <a className="list-group-item list-group-item-action" key={post._id} href="#">
             <div className="row ">
                 <div className="my-1 col-9">
                     <div className="">{post.topic}</div>

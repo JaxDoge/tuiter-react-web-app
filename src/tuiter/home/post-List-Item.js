@@ -1,8 +1,8 @@
 import React from "react";
-import "index.css"
 
 
-const PostListItem = (post) => {
+const PostListItem = ({post}) => {
+    // const post = JSON.parse(post_p);
     return(
         <div className="list-group-item pt-3 border border-top-0 border-start-0 border-end-0">
 
@@ -23,17 +23,17 @@ const PostListItem = (post) => {
                     </div>
                     <div id="tweet-content" className="">
                         <div className="">
-                            {post.tweetText}
+                            <div dangerouslySetInnerHTML={{ __html: post.tweetText}} />
                         </div>
                         <div id="hyperlink-card" className="border rounded-3 mt-2">
                             <div className="border border-start-0 border-end-0 border-top-0">
-                                <img src={`imgs/${post.hyperLinkImage}`} className="w-100 rounded-top" />
+                                <img src={`/imgs/${post.hyperLinkImage}`} className="w-100 rounded-top" />
                             </div>
                             <div id="hyperlink-preview" className="container pt-2">
                                 <div className="">
                                     {post.hyperLinkTitle}
                                 </div>
-                                <div id="hyperlink-specification" className="text-white-50">
+                                <div id="hyperlink-specification" className="">
                                     {post.hyperLinkSpec}
                                     {post.hyperLinkUrl}
                                 </div>
@@ -49,7 +49,7 @@ const PostListItem = (post) => {
                             <a href="#"><i className="fa-sharp fa-solid fa-retweet me-2"></i></a>{post.retweetNum}
                         </div>
                         <div id="button-column" className="col-3 d-flex justify-content-center align-content-center">
-                            <a href="#" style="color: red"><i className="fa-solid fa-heart me-2"></i></a>{post.likeNum}
+                            <a href="#" style={{"color": "red"}}><i className="fa-solid fa-heart me-2"></i></a>{post.likeNum}
                         </div>
                         <div id="button-column" className="col-3 d-flex justify-content-center align-content-center">
                             <a href="#"><i className="fa-solid fa-arrow-up-from-bracket"></i></a>
@@ -61,8 +61,6 @@ const PostListItem = (post) => {
             </div>
 
         </div>
-
-
     );
 }
 
