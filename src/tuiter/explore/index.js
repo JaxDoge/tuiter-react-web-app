@@ -17,7 +17,7 @@ const ExploreComponent = () => {
                             </span>
                         </div>
                         <div className="col-1 d-flex align-items-center justify-content-center ps-0">
-                            <a className="" href="#">
+                            <a className="" href="/#">
                                 <i className="fa-solid fa-gear wd-gear-icon"></i>
                             </a>
                         </div>
@@ -27,19 +27,19 @@ const ExploreComponent = () => {
                     <div id="lowernavi">
 
                         <nav className="nav nav-tabs pt-2">
-                            <a className="nav-link active" href="#">
+                            <a className="nav-link active" href="/#">
                                 For you
                             </a>
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="/#">
                                 Trending
                             </a>
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="/#">
                                 News
                             </a>
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="/#">
                                 Sports
                             </a>
-                            <a className="nav-link d-none d-md-block" href="#">
+                            <a className="nav-link d-none d-md-block" href="/#">
                                 Entertainment
                             </a>
                         </nav>
