@@ -6,10 +6,10 @@ import {useSelector} from "react-redux";
 const ProfileComponent = () => {
     const myProfile = useSelector((st) => st.myProfile);
     return(
-        <div>
-            <div id={"head"} className={"d-flex"}>
+        <div className={"border rounded"}>
+            <div id={"head"} className={"d-flex py-2"}>
                 <div className={"d-flex justify-content-center align-items-center ms-3 me-5"}>
-                    <a href={""} className={"text-dark"}><i className="fa-solid fa-arrow-left"></i></a>
+                    <button type={"button"} className={"btn btn-link text-dark"}><i className="fa-solid fa-arrow-left"></i></button>
                 </div>
                 <div className={""}>
                     <div className={"fw-bold h5 mb-0"}>{myProfile.name}</div>
@@ -20,7 +20,7 @@ const ProfileComponent = () => {
                 <img src={`/imgs/${myProfile.bannerPicture}`} className="w-100" alt={"profileBanner"}/>
                 <img src={`/imgs/${myProfile.profilePicture}`} className={"rounded-circle wd-profile-avatar-position"} height={120} alt={"profileAvatar"} />
             </div>
-            <div id={"editButton"} className={"d-flex flex-row-reverse mt-2"}>
+            <div id={"editButton"} className={"d-flex flex-row-reverse mt-2 me-2"}>
                 <Link to={"/tuiter/edit-profile"}>
                     <button className={"btn btn-outline-secondary rounded-pill fw-bold text-dark"}>Edit profile</button>
                 </Link>

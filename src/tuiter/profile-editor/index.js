@@ -26,16 +26,15 @@ const EditProfile = () => {
     }
 
     return(
-        <div>
-
-            <div id={"head"} className={"d-flex mb-2"}>
+        <div className={"border rounded"}>
+            <div id={"head"} className={"d-flex my-2"}>
                 <div className={"d-flex justify-content-center align-items-center ms-3 me-5"}>
                     <Link to={"/tuiter/profile"} className={"text-dark"}><i className="fa-solid fa-xmark"></i></Link>
                 </div>
                 <div className={"pt-1"}>
                     <div className={"fw-bold h5 mb-0"}>Edit profile</div>
                 </div>
-                <div className={"ms-auto"}>
+                <div className={"ms-auto me-2"}>
                     <Link to={"/tuiter/profile"}>
                         <button className={"btn  btn-dark rounded-pill fw-bold  py-1"} type={"submit"} onClick={saveSubmitHandler}>Save</button>
                     </Link>
@@ -45,7 +44,7 @@ const EditProfile = () => {
                 <img src={"/imgs/webDevelopBanner.jfif"} className="w-100" alt={"profileBanner"}/>
                 <img src={"/imgs/nerdAvatar.jpg"} className={"rounded-circle wd-profile-avatar-position"} height={120} alt={"profileAvatar"} />
             </div>
-            <div id={"edit_form"} className={"mt-5 pt-2"}>
+            <div id={"edit_form"} className={"container mt-5 pt-2"}>
                 <form>
                     <div className="form-group position-relative mb-4">
                         <small className={"text-secondary wd-label-position"}>
@@ -73,7 +72,7 @@ const EditProfile = () => {
                     </div>
                     <div className="form-group position-relative mb-4 d-flex flex-column">
                         <small className={"text-secondary"}>
-                            Birth date · <a className={"text-primary"} onClick={() => setBdayEditor(!bdayEditor)}>Edit</a>
+                            Birth date · <button type={"button"} className={"btn btn-link text-primary pt-0 ps-0"} onClick={() => setBdayEditor(!bdayEditor)}>Edit</button>
                         </small>
                         {bdayEditor
                             ? <span>{birthday} </span>
