@@ -25,7 +25,7 @@ const ProfileComponent = () => {
                     <button className={"btn btn-outline-secondary rounded-pill fw-bold text-dark"}>Edit profile</button>
                 </Link>
             </div>
-            <div id={"detailInfo"} className={"container mt-2"}>
+            <div id={"detailInfo"} className={"container mt-4"}>
                 <div className={"d-flex flex-column"}>
                     <span className={"fw-bold h5 mb-0"}>{myProfile.name}</span>
                     <span className={"text-secondary wd-content-subtitle"}>@{myProfile.handle}</span>
