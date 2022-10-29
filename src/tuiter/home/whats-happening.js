@@ -12,6 +12,7 @@ const WhatsHappening = () => {
             tuit: whatsHappening
         }
         dispatch(createTuit(newTuit));
+        setWhatsHappening("");
     }
     return (
         <div className="row">
