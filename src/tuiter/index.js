@@ -19,7 +19,7 @@ const store = configureStore(
             who: whoReducer,
             tuits: tuitsReducer,
             myProfile: profileReducer
-    }});
+        }});
 
 function Tuiter() {
     return(
