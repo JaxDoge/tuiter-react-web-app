@@ -1,0 +1,12 @@
+#bannerImg .wd-profile-avatar-position {
+    position: absolute;
+    bottom: -60px;
+    left: 30px;
+}
+
+
+#edit_form .wd-label-position {
+    position: absolute;
+    top: 4px;
+    left: 12px;
+}
