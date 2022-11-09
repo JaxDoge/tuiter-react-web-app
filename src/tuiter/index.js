@@ -17,11 +17,12 @@ import EditProfile from "./profile-editor";
 const store = configureStore(
     {reducer: {
             who: whoReducer,
-            tuits: tuitsReducer,
+            tuitsData: tuitsReducer,
             myProfile: profileReducer
         }});
 
 function Tuiter() {
+    console.log("home rending")
     return(
         <Provider store={store}>
             <div className="row mt-2">
