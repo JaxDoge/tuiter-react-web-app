@@ -23,7 +23,7 @@ const PostListItem = ({post}) => {
                        onClick={() => deleteTuitHandler(post._id)}></i>
                     <div id="content-head-info" className="row">
                         <div id="user-time" className="col-10 ps-0">
-                            <span className="fw-bold">{post.userName} <i
+                            <span className="fw-bold">{post.username} <i
                                 className="fa-solid fa-circle-check"></i></span>
                             <span className="ms-1">@{post.handle} · {post.time}</span>
                         </div>
