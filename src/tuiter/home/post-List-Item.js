@@ -16,7 +16,7 @@ const PostListItem = ({post}) => {
 
             <div className="row">
                 <div id="avatar-colum" className="col-1">
-                    <img src={`/imgs/${post.image}`} className="rounded-circle" width="48px"  alt={"avatar"}/>
+                    <img src={`/imgs/${post.useravatar}`} className="rounded-circle" width="48px"  alt={"avatar"}/>
                 </div>
                 <div id="twiter-content-column" className="col-11 ps-4">
                     <i className="bi bi-x-lg float-end"

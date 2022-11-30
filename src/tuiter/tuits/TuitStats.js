@@ -5,6 +5,25 @@ import {updateTuitThunk} from "../../services/tuits-thunks";
 const TuitStats = ({post}) => {
     const dispatch = useDispatch();
 
+    const likeHandler = (thisPost) => {
+        if (!thisPost.liked) {
+            dispatch(
+                updateTuitThunk({
+                    ...thisPost,
+                    likes: thisPost.likes + 1,
+                    liked: true
+                }))
+        } else {
+            dispatch(
+                updateTuitThunk({
+                    ...thisPost,
+                    likes: thisPost.likes - 1,
+                    liked: false
+                }))
+        }
+
+    }
+
     return(
         <div id="functional-panel" className="row mt-3">
             <div id="button-column" className="col-3 d-flex  align-content-center">
@@ -15,12 +34,7 @@ const TuitStats = ({post}) => {
             </div>
             <div id="button-column" className="col-3 d-flex justify-content-center align-content-center">
                 <button type={"button"} className={"btn btn-link pt-0 ps-0 text-secondary"}
-                        onClick={() => dispatch(
-                            updateTuitThunk({
-                                ...post,
-                                likes: post.likes + 1,
-                                liked: true
-                            }))}>
+                        onClick={() => likeHandler(post)}>
                     {
                         post.liked
                             ? <i className="fa-solid fa-heart text-danger me-2"></i>
